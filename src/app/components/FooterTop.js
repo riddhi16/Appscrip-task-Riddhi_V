@@ -12,19 +12,23 @@ const FooterTop = () => {
           </p>
         </div>
         <div className={classes.newsLetterArea}>
-          <div className={classes}>
-            <input
-              type="text"
-              className={classes}
-              id="name"
-              name="name"
-              required
-              placeholder="your email"
-            ></input>
-          </div>
-          <div className={classes}>
-            <button className={classes}>subscribe</button>
-          </div>
+          <label htmlFor="name">
+            <div className={classes}>
+              <input
+                type="text"
+                className={classes}
+                id="name"
+                name="name"
+                required
+                placeholder="your email"
+              ></input>
+            </div>
+          </label>
+          <label htmlFor="subscribe">
+            <div className={classes}>
+              <button className={classes}>subscribe</button>
+            </div>
+          </label>
         </div>
       </div>
       <div className={classes.topRight}>

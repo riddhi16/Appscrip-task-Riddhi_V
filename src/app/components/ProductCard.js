@@ -5,7 +5,12 @@ const ProductCard = ({ product }) => {
   return (
     <div className={classes.productCard}>
       <div className={classes.productImage}>
-        <img src={product.image} alt={product.title} />
+        <Image
+          src={product.image}
+          alt={product.title}
+          width={150}
+          height={150}
+        />
       </div>
       <div className={classes.productContentWrapper}>
         <div className={classes.productTitleArea}>
