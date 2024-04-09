@@ -1,95 +1,39 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import Header from "@/app/components/Header";
+import AnnouncementBar from "@/app/components/AnnouncementBar";
+import Navigation from "@/app/components/Navigation";
+import ShopAll from "@/app/components/ShopAll";
+import Skills from "@/app/components/Skills";
+import Stories from "./components/Stories";
+import About from "@/app/components/About";
+import ContactUS from "@/app/components/ContactUS";
+import HomePage from "@/app/components/Home";
+import Footer from "@/app/components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Header from "@/app/components/Header.css";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <AnnouncementBar />
+      <div className="container">
+        <Header />
+      </div>
+      <BrowserRouter>
+        <Navigation />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/ShopAll" element={<ShopAll />}></Route>
+            <Route path="/Skills" element={<Skills />}></Route>
+            <Route path="/Stories" element={<Stories />}></Route>
+            <Route path="/About" element={<About />}></Route>
+            <Route path="/ContactUS" elemen={<ContactUS />}></Route>
+          </Routes>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </BrowserRouter>
+      <Footer />
+    </>
   );
 }

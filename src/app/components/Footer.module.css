@@ -1,0 +1,23 @@
+.mainWrapper{
+        max-width: 1392px;
+        margin: auto;
+        padding: 0px 20px;
+        background-color: black;
+}
+.topWrapper{
+        display: flex;
+        flex-direction: column;
+        color: white;
+}
+.topLeft{
+        width: 100%;
+}
+.topLeft .newsLetterArea{
+        display: flex;
+}
+.contactHeading_Desktop{
+        display: none;
+}
+.topRight{
+        width: 100%;
+}

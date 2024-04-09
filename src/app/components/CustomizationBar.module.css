@@ -1,0 +1,84 @@
+/* Customization Bar */
+.wrapper{
+        display: flex;
+        border-top:2px solid #E5E5E5 ;
+        border-bottom: 2px solid #E5E5E5;
+        padding:20px 0px;
+        justify-content: space-evenly;
+}
+.wrapper .filterAreaMobile{
+        width: 50%;  
+        justify-content: center;
+        border-right: #E5E5E5 2px solid;
+}
+.wrapper .recomendationArea{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+}
+.wrapper .recomendationArea select{
+        justify-content: center;
+}
+.product_count{
+        display: none;
+}
+.product_count p{
+        font-weight: 600;
+}
+.filterAreaDesktop{
+        display: none;
+        
+}
+.filterAreaMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+}
+.select{
+        padding: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        border: 0px;
+}
+.select:focus-visible{
+        outline: -webkit-focus-ring-color auto 0px;
+}
+.select .selectedOption{
+        font-weight: 600!important;
+}
+/* .select option{
+        padding: 10px;
+} */
+
+@media screen and (min-width:768px){
+        .wrapper{
+                justify-content: space-between;
+        }
+        .filterAreaMobile{
+                display: none;
+        }
+        .product_count{
+                display: block;
+                margin: auto 0;
+        }
+        .select{
+                padding: 15px;
+        }
+        .filterAreaDesktop{
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        .filterAreaDesktop p{
+                color: #888792;
+                font-family: 'Times New Roman', Times, serif;
+                text-transform: uppercase;
+                text-decoration: underline #888792 1px;
+        }
+        .wrapper .recomendationArea{
+                width: 70%;
+                justify-content: flex-end;
+        }
+}

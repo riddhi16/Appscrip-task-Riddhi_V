@@ -1,0 +1,33 @@
+.Annoucement_Bar{
+        background-color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.A_childO , .A_childT , .A_childTh{
+        background-color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+}
+.A_childO , .A_childTh{
+        display: none;
+}
+.Annoucement_Text{
+        color: #EB4C6B;
+        margin-left: 10px;
+}
+@media screen and (min-width:768px){
+        .A_childT{
+                height: 40px;
+                width: 30%;
+        }
+        .A_childO , .A_childTh{
+                display: block;
+                width: 30%;
+                display: flex;
+        }
+       
+}

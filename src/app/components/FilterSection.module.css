@@ -1,0 +1,57 @@
+.wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+}
+.checkbox{
+        border-bottom:#E5E5E5 1px solid;
+        padding: 0px 0px 20px 0px; 
+        display: flex;       
+}
+.checkbox input[type="checkbox"] {
+        /* Increase the width and height of the checkbox */
+        width: 20px; /* Adjust as needed */
+        height: 20px; /* Adjust as needed */
+        color: #4D4D4D;
+}
+.checkbox label[for='customize']{
+        /* margin-left: 1px; */
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: auto 2px;
+}
+/* Accordion CSS */
+.accordionWrapper{
+        padding: 20px 0px;
+        border-bottom:#E5E5E5 1px solid;
+}
+.accordionWrapper:last-child{
+        border-bottom: 0px;
+}
+.accordionHead{
+        display: flex;
+        justify-content: space-between;
+}
+.accordionHead h3{
+        text-transform: uppercase;
+        font-weight: 600;
+        color: 252020;
+        margin-bottom: 10px;
+}
+.accordionWrapper p{
+        margin-bottom: 20px;
+}
+
+.accordionWrapper .unselectList{
+        color: #888792;
+         font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+         text-decoration: underline #888792 1px;
+         margin-bottom: 20px;
+}
+.accordionWrapper .options{
+        margin-bottom: 20px;
+}
+@media screen and (min-width:768px){
+
+}
