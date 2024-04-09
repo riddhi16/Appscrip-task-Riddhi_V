@@ -24,7 +24,7 @@ export default function Home() {
         <Navigation />
         <div className="container">
           <Routes>
-            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/Home" element={<HomePage />}></Route>
             <Route path="/ShopAll" element={<ShopAll />}></Route>
             <Route path="/Skills" element={<Skills />}></Route>
             <Route path="/Stories" element={<Stories />}></Route>
