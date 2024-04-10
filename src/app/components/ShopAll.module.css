@@ -29,6 +29,7 @@
 .productSection {
         width: 100%; 
         padding-top: 20px;
+        padding-bottom: 20px;
 }
 .productSection .productlist{
   display: flex;
@@ -42,7 +43,8 @@
         width: calc(50% - 10px); 
         border: 1px solid #F1F1F1;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius:8px       
+        border-radius:8px  ;
+        cursor: pointer;    
 }
 .productTitleArea{
         display: flex;
@@ -51,23 +53,24 @@
 .productDetails{
         display: flex;
         background-color: #F1F1F1;
+        flex-direction: column;
 }
 .productDescription{
+        font-size: 14px;
         margin-left:5px;
-        width: 70%;
+        width: 100%;
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-                line-clamp: 2; 
-        -webkit-box-orient: vertical;
 }
 
 .productPrice{
-        width: 30%;
+        display: none;
+        /* font-size: 14px;
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
 }
 .productTitle {
         text-overflow: ellipsis;
@@ -127,7 +130,19 @@
         .productSection .productlist .productCard{
                 width: calc(33% - 10px); 
         }
-        
+        /* .productDetails{
+                flex-direction: column;
+        } */
+        .productDescription{
+                width: 100%;
+        }
+        .productPrice{
+                width: 30%;
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
         .fullWidth {
         width: 100%; /* Full width when filter is hidden */
         }

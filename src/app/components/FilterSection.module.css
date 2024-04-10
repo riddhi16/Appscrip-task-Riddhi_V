@@ -38,16 +38,16 @@
         color: 252020;
         margin-bottom: 10px;
 }
-.accordionWrapper p{
+/* .accordionWrapper p{
         margin-bottom: 20px;
-}
+} */
 
 .accordionWrapper .unselectList{
         color: #888792;
          font-family: 'Times New Roman', Times, serif;
         text-transform: uppercase;
          text-decoration: underline #888792 1px;
-         margin-bottom: 20px;
+         margin: 20px 0;
 }
 .accordionWrapper .options{
         margin-bottom: 20px;

@@ -14,11 +14,15 @@
         align-items: center;
         column-gap: 20px;
 }
+.wrapper img{
+        cursor: pointer;
+}
 .wrapper .middle_block{
         width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 }
 .wrapper .right_block{
         width: 20%;
@@ -41,6 +45,10 @@
         .wrapper .left_block .hamburger{
                 display: none;
         }
+        .wrapper .left_block .vector{
+                width: 30px;
+                height: 30px;
+        }
         .wrapper .right_block{
                 width: 20%;
         }
@@ -55,4 +63,6 @@
                 font-weight: 600;
         }
 }
+
+
 

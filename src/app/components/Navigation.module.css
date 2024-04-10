@@ -41,7 +41,7 @@
         .navDesktop{
                 display: block;
                 display: flex;
-                width: 40%;
+                width: 50%;
         }
         .navDesktop .navList {
                 display: flex;
@@ -57,5 +57,10 @@
                 font-weight: 600;
               
                 text-transform: uppercase;
+        }
+}
+@media only screen and (min-width: 992px) {
+        .navDesktop{
+                width: 40%; 
         }
 }

@@ -70,10 +70,10 @@
 }
 .list{
         list-style-type: none;
-        margin: auto 0;
+       
 }
-.currencyList .list{
-        margin-left: 4px;
+.currencyList .list{ 
+        margin: auto 0 auto 4px;
 }
 .text{
         display: none;
@@ -114,18 +114,126 @@
         .contactUsList{
                 flex-direction: column;
         }
-        .contactUsList{
+        .contactUsList .list{
                 font-size: 16px;
+
         }
         .text{
-                font-size: 8px;
-                
+                font-size: 10px;
                 display: block;
         }
 }
 
 /*Bottom Footer CSS  */
-
-.mettaMuseMobile .metatLis{
+.bottomWrapper{
+        width: 100%;
+        margin: auto;
         display: flex;
+        flex-direction: column;
+        color: white;
+}
+/* bottomLeft */
+.bottomLeft{
+        display: flex;
+        flex-direction: column;
+}
+.mettaMuseMobile .metatList{
+        display: flex;
+}
+.mettaMuseMobile .MettList .list{
+        color: white!important;
+}
+.mettaMuseDesktop, .quickLinksDesktop,.followUsDesktop{
+        display: none;
+}
+.quickLinksList , .MettList{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        border-top: 1px solid #E5E5E5;
+}
+/* Bottom Right */
+.bottomRight{
+        display: flex;
+        flex-direction: column;
+}
+.followUsList{
+        display: flex;
+        justify-content:space-between;
+        padding: 20px 0px;
+        border-top: 1px solid #E5E5E5;
+}
+.paymentOptions{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        border-top: 1px solid #E5E5E5;
+}
+.paymentOptionsIcons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+}
+.rightsBlock{
+        margin: 0;
+        color: white;
+}
+@media screen and (min-width:768px){
+        /* Bottom left */
+        .bottomWrapper{
+                border-top: 1px solid #E5E5E5;
+                flex-direction: row; 
+                width: 100%; 
+                justify-content: space-between;
+        }
+        .bottomWrapper .bottomLeft{
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+        }
+        .bottomWrapper .bottomRight{
+                width: 40%;
+        }
+        .mettaMuseMobile , .quickLinksMobile ,.followUsMobile{
+                display: none;
+        }
+        .mettaMuseDesktop{
+                width: 50%;
+        }
+        .quickLinksDesktop{
+                width: 50%;
+        }
+        .quickLinksDesktop a{
+                text-decoration: none;
+        }
+        .mettaMuseDesktop, .quickLinksDesktop,.followUsDesktop{
+                display: block;
+        }
+        .MettList , .followUsList ,.quickLinksList{
+                flex-direction: column;
+                font-weight: 200;
+        }
+        .MettList a, .followUsList a,.quickLinksList a{
+                text-decoration: none;
+                color: #E5E5E5;
+                font-weight: 200;
+        }
+        .listHead a{
+                font-weight: 600;
+        }
+        .paymentOptions{
+                border-top: 0px; 
+              
+        }
+        .socialIcons{
+                margin-top: 6px;
+        }
+        .socialIcons a{
+                margin-right: 6px;
+        }
+}
+@media only screen and (min-width: 992px) {
+        .paymentOptions{
+                width:70%;
+        }
 }
