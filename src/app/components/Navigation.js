@@ -42,7 +42,7 @@ const Navigation = () => {
             </Link>
           </li>
           <li className={classes.navItem}>
-            <Link to="/contact" className={classes.navLink}>
+            <Link to="/contactUs" className={classes.navLink}>
               Contact Us
             </Link>
           </li>

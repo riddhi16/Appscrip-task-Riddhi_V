@@ -122,8 +122,15 @@ body{
     margin: auto;
     padding: 0px 20px;
 }
-
-
+.homePage{
+  height: 600px;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+}
+/* .homePage h1{
+  
+} */
 /* @media screen and (min-width:768px){
 
 } */

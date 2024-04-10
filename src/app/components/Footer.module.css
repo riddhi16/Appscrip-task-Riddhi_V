@@ -1,23 +1,131 @@
-.mainWrapper{
-        max-width: 1392px;
-        margin: auto;
-        padding: 0px 20px;
+.wrap{
         background-color: black;
 }
+.mainWrapper{
+        padding: 20px 20px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        max-width: 1392px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+}
+/* Top Footer CSS */
+
 .topWrapper{
+       width: 100%;
+        margin: auto;
         display: flex;
         flex-direction: column;
         color: white;
 }
 .topLeft{
+        justify-content: center;
         width: 100%;
+        border-bottom: #E5E5E5 1px solid;
+        padding-bottom: 20px;
+}
+.topLeft_textArea h3 , .topLeft_textArea p{
+        margin-bottom: 15px;
 }
 .topLeft .newsLetterArea{
         display: flex;
+        column-gap: 5px;
+}
+.topLeft .newsLetterArea .inputWrapper{
+        width: 70%
+}
+.topLeft .inputBox{
+        width: 100%;
+        padding: 10px;
+        border: 0px;
+        border-radius:3px;
+}
+.topLeft .newsLetterArea .buttonWrapper{
+        width: 30%
+}
+.topLeft .newsLetterArea .buttonArea{
+        width: 100%;
+        padding: 10px;
+        border: #888792 1px solid;
+        color: #888792;
+        background-color: black;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius:3px;
 }
 .contactHeading_Desktop{
         display: none;
 }
+.contactUsList {
+        display: flex;   
+}
+.contactUsList .list{
+        margin-left: 4px;
+        font-size: 8px;
+}
+.currencyList{
+        display: flex;   
+}
+.list{
+        list-style-type: none;
+        margin: auto 0;
+}
+.currencyList .list{
+        margin-left: 4px;
+}
+.text{
+        display: none;
+}
 .topRight{
         width: 100%;
+}
+.contactArea{
+        padding: 20px 0; 
+        border-bottom: #888792 1px solid;
+ }
+ .currencyDetails{
+         padding: 20px 0; 
+ }
+
+@media screen and (min-width:768px){
+        .topWrapper{
+                flex-direction: row;
+                justify-content: space-between;
+        }
+        .topLeft{
+                width: 40%;
+        }
+        .topLeft{
+                border-bottom:0px;
+                padding-bottom: 0px;
+        }
+        .topRight{
+                width: 40%;
+        }
+        .contactUsList .starIcon{
+                display: none;
+        }
+        .contactArea{
+                border-bottom: 0px;
+                padding-top: 0px;
+        }
+        .contactUsList{
+                flex-direction: column;
+        }
+        .contactUsList{
+                font-size: 16px;
+        }
+        .text{
+                font-size: 8px;
+                
+                display: block;
+        }
+}
+
+/*Bottom Footer CSS  */
+
+.mettaMuseMobile .metatLis{
+        display: flex;
 }

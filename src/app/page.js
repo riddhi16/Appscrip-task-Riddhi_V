@@ -12,7 +12,7 @@ import ContactUS from "@/app/components/ContactUS";
 import HomePage from "@/app/components/Home";
 import Footer from "@/app/components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Header from "@/app/components/Header.css";
+
 export default function Home() {
   return (
     <>
@@ -24,12 +24,12 @@ export default function Home() {
         <Navigation />
         <div className="container">
           <Routes>
-            <Route path="/Home" element={<HomePage />}></Route>
+            <Route path="/" element={<HomePage />}></Route>
             <Route path="/ShopAll" element={<ShopAll />}></Route>
             <Route path="/Skills" element={<Skills />}></Route>
             <Route path="/Stories" element={<Stories />}></Route>
             <Route path="/About" element={<About />}></Route>
-            <Route path="/ContactUS" elemen={<ContactUS />}></Route>
+            <Route path="/ContactUS" element={<ContactUS />}></Route>
           </Routes>
         </div>
       </BrowserRouter>
