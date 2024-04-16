@@ -11,6 +11,7 @@
         flex-wrap: wrap;
         margin: auto;
 }
+
 /* Top Footer CSS */
 
 .topWrapper{
@@ -54,6 +55,7 @@
         font-weight: 600;
         text-transform: uppercase;
         border-radius:3px;
+        cursor: pointer;
 }
 .contactHeading_Desktop{
         display: none;
@@ -84,9 +86,11 @@
 .contactArea{
         padding: 20px 0; 
         border-bottom: #888792 1px solid;
+        cursor: context-menu;
  }
  .currencyDetails{
          padding: 20px 0; 
+         cursor: context-menu;
  }
 
 @media screen and (min-width:768px){
@@ -139,6 +143,7 @@
 }
 .mettaMuseMobile .metatList{
         display: flex;
+        cursor: pointer;
 }
 .mettaMuseMobile .MettList .list{
         color: white!important;
@@ -151,6 +156,7 @@
         justify-content: space-between;
         padding: 20px 0px;
         border-top: 1px solid #E5E5E5;
+        cursor: pointer;
 }
 /* Bottom Right */
 .bottomRight{

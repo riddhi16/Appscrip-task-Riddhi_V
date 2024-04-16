@@ -6,6 +6,7 @@
         text-align:center;
         padding-top :15px;
         padding-bottom:15px;
+        cursor: context-menu;
 }
 .headSection h1{
         width: 100%;
@@ -56,8 +57,8 @@
         flex-direction: column;
 }
 .productDescription{
-        font-size: 14px;
-        margin-left:5px;
+        font-size: 10px;
+        padding: 5px;
         width: 100%;
         white-space: nowrap;
         overflow: hidden;
@@ -76,7 +77,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        margin-left: 5px;
+        padding: 5px;
         width: 80%;
       }
 .productImage{
@@ -135,6 +136,7 @@
         } */
         .productDescription{
                 width: 100%;
+                font-size: 15px;
         }
         .productPrice{
                 width: 30%;
