@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "@/app/components/AnnouncemnetBar.module.css";
+import classes from "./AnnouncemnetBar.module.css";
 import Image from "next/image";
 
 const AnnoucumentBar = () => {

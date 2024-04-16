@@ -1,5 +1,5 @@
 import React from "react";
-import ShopAll from "../components/ShopAll";
+import ShopAll from "./ShopAll";
 
 const page = () => {
   return <ShopAll />;

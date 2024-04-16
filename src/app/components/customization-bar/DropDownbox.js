@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DropDown from "@/app/components/DropDown.js";
+import DropDown from "@/app/components/customization-bar/DropDown.js";
 const options = [
   { label: "Recommended", value: "recommended" },
   { label: "Newest first", value: "Newest first" },

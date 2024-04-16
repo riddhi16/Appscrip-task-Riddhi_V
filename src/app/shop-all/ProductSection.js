@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "@/app/components/ProductCard";
+import ProductCard from "@/app/shop-all/ProductCard";
 import classes from "./ShopAll.module.css";
 const ProductSection = (props) => {
   const { products } = props;

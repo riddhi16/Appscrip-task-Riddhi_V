@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Footer.module.css";
-import FooterTop from "@/app/components/FooterTop.js";
-import FooterBottom from "@/app/components/FooterBottom";
+import FooterTop from "@/app/components/footer/FooterTop.js";
+import FooterBottom from "@/app/components/footer/FooterBottom";
 const Footer = () => {
   return (
     <div className={classes.wrap}>

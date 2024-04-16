@@ -82,8 +82,8 @@
 // export default ShopAll;
 "use client";
 import React, { useState, useEffect } from "react";
-import CustomizationBar from "@/app/components/CustomizationBar";
-import FilterSection from "./FilterSection";
+import CustomizationBar from "@/app/components/customization-bar/CustomizationBar";
+import FilterSection from "../components/filtersection/FilterSection";
 import ProductSection from "./ProductSection";
 import classes from "./ShopAll.module.css";
 

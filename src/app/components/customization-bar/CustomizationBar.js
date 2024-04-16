@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./CustomizationBar.module.css";
-import DropDownbox from "@/app/components/DropDownbox.js";
+import DropDownbox from "@/app/components/customization-bar/DropDownbox.js";
 import Image from "next/image";
 
 const CustomizationBar = ({
