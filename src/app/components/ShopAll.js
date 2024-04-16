@@ -80,7 +80,7 @@
 // };
 
 // export default ShopAll;
-
+"use client";
 import React, { useState, useEffect } from "react";
 import CustomizationBar from "@/app/components/CustomizationBar";
 import FilterSection from "./FilterSection";
